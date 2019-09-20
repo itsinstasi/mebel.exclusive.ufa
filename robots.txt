@@ -1,0 +1,2 @@
+﻿User-agent: *
+Sitemap: https://mebel-exclusive-ufa.itsinsta.site/sitemap.xml
