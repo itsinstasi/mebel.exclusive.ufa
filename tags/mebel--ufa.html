@@ -28,6 +28,9 @@
     <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#fff">
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -59,249 +62,255 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфа">
-								<a href="./ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufa.png" alt="уфа" /></div>
-									<div class="stories__slide-txt">уфа</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфа">
+										<a href="./ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufa.png);"></div>
+											<div class="stories__slide-txt">уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель уфа на заказ">
+										<a href="./mebel--ufa-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--ufa-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">мебель уфа на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель уфа">
+										<a href="./mebel--ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--ufa.png);"></div>
+											<div class="stories__slide-txt">мебель уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="интерьер уфа">
+										<a href="./inter-er-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/inter-er-ufa.png);"></div>
+											<div class="stories__slide-txt">интерьер уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфа интерьер">
+										<a href="./ufa-inter-er.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufa-inter-er.png);"></div>
+											<div class="stories__slide-txt">уфа интерьер</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфа мебель">
+										<a href="./ufa-mebel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufa-mebel-.png);"></div>
+											<div class="stories__slide-txt">уфа мебель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфимский интерьер">
+										<a href="./ufimskiy-inter-er.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufimskiy-inter-er.png);"></div>
+											<div class="stories__slide-txt">уфимский интерьер</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель эксклюзивуфа">
+										<a href="./mebel--eksklyuzivufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--eksklyuzivufa.png);"></div>
+											<div class="stories__slide-txt">мебель эксклюзивуфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфа мебель на заказ">
+										<a href="./ufa-mebel--na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufa-mebel--na-zakaz.png);"></div>
+											<div class="stories__slide-txt">уфа мебель на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафы уфа">
+										<a href="./shkafy-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafy-ufa.png);"></div>
+											<div class="stories__slide-txt">шкафы уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкаф уфа">
+										<a href="./shkaf-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkaf-ufa.png);"></div>
+											<div class="stories__slide-txt">шкаф уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн уфа">
+										<a href="./dizayn-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn-ufa.png);"></div>
+											<div class="stories__slide-txt">дизайн уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафы купе уфа">
+										<a href="./shkafy-kupe-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafy-kupe-ufa.png);"></div>
+											<div class="stories__slide-txt">шкафы купе уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкаф купе уфа">
+										<a href="./shkaf-kupe-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkaf-kupe-ufa.png);"></div>
+											<div class="stories__slide-txt">шкаф купе уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкаф купе уфа на заказ">
+										<a href="./shkaf-kupe-ufa-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkaf-kupe-ufa-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">шкаф купе уфа на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафы уфа на заказ">
+										<a href="./shkafy-ufa-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafy-ufa-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">шкафы уфа на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфа шкаф">
+										<a href="./ufa-shkaf.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufa-shkaf.png);"></div>
+											<div class="stories__slide-txt">уфа шкаф</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкаф уфа на заказ">
+										<a href="./shkaf-ufa-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkaf-ufa-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">шкаф уфа на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафы купе уфа на заказ">
+										<a href="./shkafy-kupe-ufa-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafy-kupe-ufa-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">шкафы купе уфа на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфа шкаф купе">
+										<a href="./ufa-shkaf-kupe.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufa-shkaf-kupe.png);"></div>
+											<div class="stories__slide-txt">уфа шкаф купе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфа дизайн">
+										<a href="./ufa-dizayn.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufa-dizayn.png);"></div>
+											<div class="stories__slide-txt">уфа дизайн</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="прихожая уфа">
+										<a href="./prikhozhaya-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/prikhozhaya-ufa.png);"></div>
+											<div class="stories__slide-txt">прихожая уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель вуфе">
+										<a href="./mebel--vufe.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--vufe.png);"></div>
+											<div class="stories__slide-txt">мебель вуфе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="гардероб уфа на заказ">
+										<a href="./garderob-ufa-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/garderob-ufa-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">гардероб уфа на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="гардероб уфа">
+										<a href="./garderob-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/garderob-ufa.png);"></div>
+											<div class="stories__slide-txt">гардероб уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="двери купе уфа">
+										<a href="./dveri-kupe-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dveri-kupe-ufa.png);"></div>
+											<div class="stories__slide-txt">двери купе уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="двери купе на заказуфа">
+										<a href="./dveri-kupe-na-zakazufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dveri-kupe-na-zakazufa.png);"></div>
+											<div class="stories__slide-txt">двери купе на заказуфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="прихожая уфа на заказ">
+										<a href="./prikhozhaya-ufa-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/prikhozhaya-ufa-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">прихожая уфа на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухни уфа">
+										<a href="./kukhni-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhni-ufa.png);"></div>
+											<div class="stories__slide-txt">кухни уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухня">
+										<a href="./kukhnya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhnya.png);"></div>
+											<div class="stories__slide-txt">кухня</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель уфа на заказ">
-								<a href="./mebel--ufa-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--ufa-na-zakaz.png" alt="мебель уфа на заказ" /></div>
-									<div class="stories__slide-txt">мебель уфа на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель уфа">
-								<a href="./mebel--ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--ufa.png" alt="мебель уфа" /></div>
-									<div class="stories__slide-txt">мебель уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="интерьер уфа">
-								<a href="./inter-er-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/inter-er-ufa.png" alt="интерьер уфа" /></div>
-									<div class="stories__slide-txt">интерьер уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфа интерьер">
-								<a href="./ufa-inter-er.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufa-inter-er.png" alt="уфа интерьер" /></div>
-									<div class="stories__slide-txt">уфа интерьер</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфа мебель">
-								<a href="./ufa-mebel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufa-mebel-.png" alt="уфа мебель" /></div>
-									<div class="stories__slide-txt">уфа мебель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфимский интерьер">
-								<a href="./ufimskiy-inter-er.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufimskiy-inter-er.png" alt="уфимский интерьер" /></div>
-									<div class="stories__slide-txt">уфимский интерьер</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель эксклюзивуфа">
-								<a href="./mebel--eksklyuzivufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--eksklyuzivufa.png" alt="мебель эксклюзивуфа" /></div>
-									<div class="stories__slide-txt">мебель эксклюзивуфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфа мебель на заказ">
-								<a href="./ufa-mebel--na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufa-mebel--na-zakaz.png" alt="уфа мебель на заказ" /></div>
-									<div class="stories__slide-txt">уфа мебель на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафы уфа">
-								<a href="./shkafy-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafy-ufa.png" alt="шкафы уфа" /></div>
-									<div class="stories__slide-txt">шкафы уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкаф уфа">
-								<a href="./shkaf-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkaf-ufa.png" alt="шкаф уфа" /></div>
-									<div class="stories__slide-txt">шкаф уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн уфа">
-								<a href="./dizayn-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn-ufa.png" alt="дизайн уфа" /></div>
-									<div class="stories__slide-txt">дизайн уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафы купе уфа">
-								<a href="./shkafy-kupe-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafy-kupe-ufa.png" alt="шкафы купе уфа" /></div>
-									<div class="stories__slide-txt">шкафы купе уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкаф купе уфа">
-								<a href="./shkaf-kupe-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkaf-kupe-ufa.png" alt="шкаф купе уфа" /></div>
-									<div class="stories__slide-txt">шкаф купе уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкаф купе уфа на заказ">
-								<a href="./shkaf-kupe-ufa-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkaf-kupe-ufa-na-zakaz.png" alt="шкаф купе уфа на заказ" /></div>
-									<div class="stories__slide-txt">шкаф купе уфа на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафы уфа на заказ">
-								<a href="./shkafy-ufa-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafy-ufa-na-zakaz.png" alt="шкафы уфа на заказ" /></div>
-									<div class="stories__slide-txt">шкафы уфа на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфа шкаф">
-								<a href="./ufa-shkaf.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufa-shkaf.png" alt="уфа шкаф" /></div>
-									<div class="stories__slide-txt">уфа шкаф</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкаф уфа на заказ">
-								<a href="./shkaf-ufa-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkaf-ufa-na-zakaz.png" alt="шкаф уфа на заказ" /></div>
-									<div class="stories__slide-txt">шкаф уфа на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафы купе уфа на заказ">
-								<a href="./shkafy-kupe-ufa-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafy-kupe-ufa-na-zakaz.png" alt="шкафы купе уфа на заказ" /></div>
-									<div class="stories__slide-txt">шкафы купе уфа на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфа шкаф купе">
-								<a href="./ufa-shkaf-kupe.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufa-shkaf-kupe.png" alt="уфа шкаф купе" /></div>
-									<div class="stories__slide-txt">уфа шкаф купе</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфа дизайн">
-								<a href="./ufa-dizayn.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufa-dizayn.png" alt="уфа дизайн" /></div>
-									<div class="stories__slide-txt">уфа дизайн</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="прихожая уфа">
-								<a href="./prikhozhaya-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/prikhozhaya-ufa.png" alt="прихожая уфа" /></div>
-									<div class="stories__slide-txt">прихожая уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель вуфе">
-								<a href="./mebel--vufe.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--vufe.png" alt="мебель вуфе" /></div>
-									<div class="stories__slide-txt">мебель вуфе</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="гардероб уфа на заказ">
-								<a href="./garderob-ufa-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/garderob-ufa-na-zakaz.png" alt="гардероб уфа на заказ" /></div>
-									<div class="stories__slide-txt">гардероб уфа на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="гардероб уфа">
-								<a href="./garderob-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/garderob-ufa.png" alt="гардероб уфа" /></div>
-									<div class="stories__slide-txt">гардероб уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="двери купе уфа">
-								<a href="./dveri-kupe-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/dveri-kupe-ufa.png" alt="двери купе уфа" /></div>
-									<div class="stories__slide-txt">двери купе уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="двери купе на заказуфа">
-								<a href="./dveri-kupe-na-zakazufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/dveri-kupe-na-zakazufa.png" alt="двери купе на заказуфа" /></div>
-									<div class="stories__slide-txt">двери купе на заказуфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="прихожая уфа на заказ">
-								<a href="./prikhozhaya-ufa-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/prikhozhaya-ufa-na-zakaz.png" alt="прихожая уфа на заказ" /></div>
-									<div class="stories__slide-txt">прихожая уфа на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухни уфа">
-								<a href="./kukhni-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhni-ufa.png" alt="кухни уфа" /></div>
-									<div class="stories__slide-txt">кухни уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухня">
-								<a href="./kukhnya.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhnya.png" alt="кухня" /></div>
-									<div class="stories__slide-txt">кухня</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -472,7 +481,7 @@
 								</div>
 							</a>
 							<a href="../posts/./chetyrekhdvernyy-vstroennyy-shkafy-kupe.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/8abe5e290122f448822cde5e6b6d42cc/5E39F402/t51.2885-15/e35/42387483_308931746326777_6797141390686945280_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/11a0dbbd26e51395d854be881448779a/5E618102/t51.2885-15/e35/42387483_308931746326777_6797141390686945280_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-12-20">20 December 2017</time></div>
@@ -515,7 +524,7 @@
 								</div>
 							</a>
 							<a href="../posts/./krasivaya-svetlaya-kukhnya-s-fasadami-pod-fakturu-dereva-patinirovannaya-2.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/0d80a0678fc08d222c783d1673663834/5E1C3A5C/t51.2885-15/e35/42739878_330350797726335_3673730637757415424_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/87a6e7dd17a0a9dcaea01a6c04862802/5E43C75C/t51.2885-15/e35/42739878_330350797726335_3673730637757415424_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-08-15">15 August 2017</time></div>
@@ -585,7 +594,7 @@
 								</div>
 							</a>
 							<a href="../posts/./xustanovili--shkafov-kupe-v-detskuyu-x.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/ddc1dee4933a42f87523ce8d434be2b6/5E3AEAEB/t51.2885-15/e35/45610864_498491340651339_9179686476751667421_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/6761122342489da708dfc03e78a44e94/5E6277EB/t51.2885-15/e35/45610864_498491340651339_9179686476751667421_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-11-17">17 November 2018</time></div>
@@ -627,7 +636,7 @@
 								</div>
 							</a>
 							<a href="../posts/./ispol-zuyaxfotopechat--dlya-shkafov-kupexmozhno-sozdat--krasiveyshie-vitrazhi-lyuboy-slozhnostix-formy-i-razm-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/ace4ea1b0a7734a7c9a208ca94d28275/5E1B7638/t51.2885-15/e35/42003128_290361458468755_6686812549960171520_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/3b7cfbd7302451db343fc071f7642cb5/5E430338/t51.2885-15/e35/42003128_290361458468755_6686812549960171520_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-12-19">19 December 2017</time></div>
@@ -683,7 +692,7 @@
 								</div>
 							</a>
 							<a href="../posts/./pri-vysokom-sprose-na-raznoobraznye-po-stilyam-kukhni-klassika-sokhranyaet-uverennoe-pervenstvox-chto-vpo-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/e1f20ec6aeb89526933fa84e46937af0/5E383C04/t51.2885-15/e35/42080447_175004933388284_5036310455522426880_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/51a81a4c607140d2c821e5c0ac3f6514/5E5FC904/t51.2885-15/e35/42080447_175004933388284_5036310455522426880_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-11-06">06 November 2017</time></div>
@@ -697,7 +706,7 @@
 								</div>
 							</a>
 							<a href="../posts/./my-predlagaem-raznoobraznye-nestandartnye-krovati-po-individual-nym-razmeram-na-zakaz-nedorogo.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/d8a392ad9a4d234db3006306405fc55f/5E391C3C/t51.2885-15/e35/41859066_2189279861091958_4259375636457455616_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/a84a92c6a52d90e343de76354e6bc8fc/5E60A93C/t51.2885-15/e35/41859066_2189279861091958_4259375636457455616_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-09-04">04 September 2017</time></div>
@@ -753,7 +762,7 @@
 								</div>
 							</a>
 							<a href="../posts/./xxnash-krasavetsx-radiusnyy-shkaf-kupe-xx.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/01ef409fb96e7dd748b9670edb2c8f19/5E1BB4B5/t51.2885-15/e35/42002812_1123752391133513_4046416138421141504_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/9064576ff356c62360d61ff54b5723cc/5E4341B5/t51.2885-15/e35/42002812_1123752391133513_4046416138421141504_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-08-03">03 August 2018</time></div>
@@ -795,7 +804,7 @@
 								</div>
 							</a>
 							<a href="../posts/./komplekt-mebeli-v-detskuyu-komnatu-2.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/843f0fb0995f7443054d3f6af4d7905c/5E1B89CC/t51.2885-15/e35/42002638_254210375237246_1841374654434902016_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/581b5a61159af2837923ebbbd42cc6f3/5E4316CC/t51.2885-15/e35/42002638_254210375237246_1841374654434902016_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-04-25">25 April 2018</time></div>
@@ -991,7 +1000,7 @@
 								</div>
 							</a>
 							<a href="../posts/./konsul-tatsiya-i-zapis--na-zamerx-8-x927x-305-36-73.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/ae771c304aaa3b3a7bbe5da797ab55be/5E3A819F/t51.2885-15/e35/42078116_732453383771454_5371084700771155968_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/3490876139e3e97915240da3cdbeec3c/5E620E9F/t51.2885-15/e35/42078116_732453383771454_5371084700771155968_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-12-11">11 December 2017</time></div>
@@ -1061,7 +1070,7 @@
 								</div>
 							</a>
 							<a href="../posts/./myagkaya-stenovaya-panel-.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/bed45d8b612bf9b6040867db9486a8f5/5E3A9F0E/t51.2885-15/e35/41663214_239116956950487_3186246837434580992_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/9e009b2bec4bb639bd84b5a780a907bc/5E622C0E/t51.2885-15/e35/41663214_239116956950487_3186246837434580992_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-12-01">01 December 2017</time></div>
@@ -1373,7 +1382,7 @@
 								</div>
 							</a>
 							<a href="../posts/./krovat--uglovayax-v-detskuyu-komnatu-dvukhmestnaya-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b3eeae051a574b6b572bc4bc333e490d/5DA5687A/t51.2885-15/e35/41677725_1000193556827739_660465308976283648_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/3ffa41cae9b3877f0c3413c3537e5e92/5DA8B43A/t51.2885-15/e35/41677725_1000193556827739_660465308976283648_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-04-19">19 April 2018</time></div>
@@ -1445,7 +1454,7 @@
 								</div>
 							</a>
 							<a href="../posts/./xkompaktnyy-shkafchik-v-nishe-v-prikhozhey.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b73c25660f8f4403dbea44c32c1870e6/5E1A8EE7/t51.2885-15/e35/41534698_544133172706480_48220688753885184_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/94059ada73aeb661386dc0f54a439805/5E421BE7/t51.2885-15/e35/41534698_544133172706480_48220688753885184_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-03-06">06 March 2018</time></div>
@@ -1487,7 +1496,7 @@
 								</div>
 							</a>
 							<a href="../posts/./osoboe-vnimanie-na-kukhne-udelyaetsya-zone-vokrug-rabochey-poverkhnostix-kotoruyu-nazyvayut-kukhonnym-fartuk-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/2b3b7079502a27ea1292400c37454a22/5E1AA7C4/t51.2885-15/e35/42955152_249044705810770_7834056726276997120_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/f69010b06b30a778fad27071687f63e7/5E4234C4/t51.2885-15/e35/42955152_249044705810770_7834056726276997120_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-02-01">01 February 2018</time></div>
@@ -1558,7 +1567,7 @@
 								</div>
 							</a>
 							<a href="../posts/./vypuklyy-radiusnyy-shkaf-kupexudobno-raspolagat--v-nebol-shikh-nishakhx-v-kotorykh-nevozmozhno-razmestit--o.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/f5eb09de04f3c6abb117f818dd25b87e/5E1A50C6/t51.2885-15/e35/41631996_2281461818751389_3286041643802689536_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/a662a714a6e4d1fd2421d0c39b78e180/5E41DDC6/t51.2885-15/e35/41631996_2281461818751389_3286041643802689536_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-12-26">26 December 2017</time></div>
@@ -1586,7 +1595,7 @@
 								</div>
 							</a>
 							<a href="../posts/./dobryy-vecherx-nashi-podpischikix-kto-kak-dumaetx-chto-izgotavlivayut-na-video.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/756f359f6857a2d52bced18ca65a0a95/5DA53DBE/t51.2885-15/e35/42642042_307653020034703_4738471571809632256_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/cda1feff71d453fd6ec57cd13c5862cc/5DA8897E/t51.2885-15/e35/42642042_307653020034703_4738471571809632256_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-12-14">14 December 2017</time></div>
@@ -1600,7 +1609,7 @@
 								</div>
 							</a>
 							<a href="../posts/./radiusnye-shkafy-kupe-otlichno-vpishutsya-kak-v-inter-er-v-stile-modern-ili-khay-tekx-tak-i-v-bolee-konse-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/8c4078bb6f96e35ce06c7048bdf594c8/5E1AEED2/t51.2885-15/e35/41675018_267966940552107_216726424873074688_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/0e3d024e77af427c9ba05a69ffcb1206/5E427BD2/t51.2885-15/e35/41675018_267966940552107_216726424873074688_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-12-12">12 December 2017</time></div>
@@ -1628,7 +1637,7 @@
 								</div>
 							</a>
 							<a href="../posts/./my-mozhem-izgotovit--dveri-kupe-shkafax-pod-vashi-mezhkomnatnye-dveri-2.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/45bc0ccccd3b18e1b110dd8a039ec904/5DA58FB9/t51.2885-15/e35/42080550_288439878643157_9181355368230420480_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/0a8bb81c3fa0aa1ec4043ea7bdc37cc9/5DA8DB79/t51.2885-15/e35/42080550_288439878643157_9181355368230420480_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-12-02">02 December 2017</time></div>
@@ -1656,7 +1665,7 @@
 								</div>
 							</a>
 							<a href="../posts/./cherno-bordovaya-kukhnya-x-duetx-kotoryy-vsegda-byvaet-udachnym.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/d1a38ed2817a52f5272f4179481c9af4/5E1C6846/t51.2885-15/e35/42440781_349791599093509_5257869341373759488_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/cf0e2b43c0d9077882a5b3ef2ff13ee4/5E43F546/t51.2885-15/e35/42440781_349791599093509_5257869341373759488_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Аркаим-Экспо</div>
@@ -1671,7 +1680,7 @@
 								</div>
 							</a>
 							<a href="../posts/./shkaf-kupe-s-fotopechat-yu-v-detskuyu-komnaty.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/ea588eed0f9700c6ccb3f47256b4a5f6/5E1B382D/t51.2885-15/e35/41891030_474977339652950_8038404058970587136_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/7adb9a4bd30c3457cf686d36b4dfacbd/5E42C52D/t51.2885-15/e35/41891030_474977339652950_8038404058970587136_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Bashkortostan</div>
@@ -1700,7 +1709,7 @@
 								</div>
 							</a>
 							<a href="../posts/./detskiy-shkaf-kupe-s-animatsionnoy-fotopechat-yu.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/70bbc4c73a443c4aeff34f3f245f34c8/5E19E508/t51.2885-15/e35/42549698_371048236767837_4851956947210993664_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/533214eff9b3c865c3efe99873d73974/5E417208/t51.2885-15/e35/42549698_371048236767837_4851956947210993664_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Аркаим-Экспо</div>
@@ -1715,7 +1724,7 @@
 								</div>
 							</a>
 							<a href="../posts/./fasady-kukhni-s-fotopechat-yu---priznak-izyskannostix-stilya-i-individual-nostixv-dome.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/05df15d0adc23b00ce573b0af8c5f754/5E3A04FC/t51.2885-15/e35/42508815_1835422193220966_2012784668914483200_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/71b671f7d7499d7df53c3d5ecfbe3648/5E6191FC/t51.2885-15/e35/42508815_1835422193220966_2012784668914483200_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-11-13">13 November 2017</time></div>
@@ -1843,7 +1852,7 @@
 								</div>
 							</a>
 							<a href="../posts/./stol-rukovoditelya-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/8d8baf87ea0a516ad67e137f81759a9b/5E1AFBD0/t51.2885-15/e35/42068989_347947989305807_6586057646602715136_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/0aa457ed27939d87dda2f349be537dce/5E4288D0/t51.2885-15/e35/42068989_347947989305807_6586057646602715136_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-03-03">03 March 2017</time></div>
@@ -1928,7 +1937,7 @@
 								</div>
 							</a>
 							<a href="../posts/./uglovoy-shkaf-kupe-v-koridor.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/490a74b69dda0d6adb9990bf0d1daed0/5E1BB7EA/t51.2885-15/e35/46317606_773720819652915_2840924607564650752_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/41aec0ccdc630fb2b7475fa0ceb3e25c/5E4344EA/t51.2885-15/e35/46317606_773720819652915_2840924607564650752_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-12-14">14 December 2018</time></div>
@@ -1970,7 +1979,7 @@
 								</div>
 							</a>
 							<a href="../posts/./vstroennyy-shkaf-kupe-v-spal-nyu-izgotovlen-i-ustanovlen-xx.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/7a5e3e4ba6068e4bfe78c29c88cfd8ba/5E390932/t51.2885-15/e35/44688866_1929826050647294_4081722034640669519_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/f4727edfea518c497b198f46395ac590/5E609632/t51.2885-15/e35/44688866_1929826050647294_4081722034640669519_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-11-25">25 November 2018</time></div>
@@ -2068,7 +2077,7 @@
 								</div>
 							</a>
 							<a href="../posts/./sochetanie-dvukh-kontrastovx-a-imenno-chernogo-s-belymx-mozhno-po-pravu-schitat--klassikoy.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/9d726abc744b1aa467263a1de39af9cd/5DA5A71B/t51.2885-15/e35/42376303_2378520122163887_7924495251960389491_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/4e148a44429814703f1f82896bc3bb3f/5DA8F2DB/t51.2885-15/e35/42376303_2378520122163887_7924495251960389491_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-10-04">04 October 2018</time></div>
@@ -2211,7 +2220,7 @@
 								</div>
 							</a>
 							<a href="../posts/./prikhozhaya-s-klassicheskimi-pod-derevo-fasadamix--s-patinoy-zoloto.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/af2f193b23b64d3e03126fa8c60b0ac2/5E38B149/t51.2885-15/e35/42746725_232023791004564_1977702946544025600_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/56bb0813ddbaf95b8b66fbdc79a6a385/5E603E49/t51.2885-15/e35/42746725_232023791004564_1977702946544025600_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-08-04">04 August 2018</time></div>
@@ -2267,7 +2276,7 @@
 								</div>
 							</a>
 							<a href="../posts/./u-nas-vy-mozhete-zakazat--kukhonnyy-garnitur-na-lyuboy-vkus-i-koshelyok.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/878cca1c02cac2e579e11eed72ddd372/5E1ADE7D/t51.2885-15/e35/42598655_2323030567924619_6000512072100610048_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/d56ae740ff9c3191592f0f401295b391/5E426B7D/t51.2885-15/e35/42598655_2323030567924619_6000512072100610048_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Ufa, Russia</div>
@@ -2310,7 +2319,7 @@
 								</div>
 							</a>
 							<a href="../posts/./krovat---liberti.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/d27c7ab0f7c9db6f9a1fcd60da507077/5E1A008F/t51.2885-15/e35/41801090_675009449547992_4471251080453292032_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/7e29ee978e32696f40a2554948f26770/5E418D8F/t51.2885-15/e35/41801090_675009449547992_4471251080453292032_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-07-10">10 July 2018</time></div>
@@ -2408,7 +2417,7 @@
 								</div>
 							</a>
 							<a href="../posts/./dobroe-utrox-druz-ya.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/2f58fb1d0b27ff3475321b28ba01d8a0/5E38ACE7/t51.2885-15/e35/42101406_1902788936425625_1632494834163908608_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/5cbaa8b949d6c77204658cc7ebdf1592/5E6039E7/t51.2885-15/e35/42101406_1902788936425625_1632494834163908608_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-05-26">26 May 2018</time></div>
@@ -2506,7 +2515,7 @@
 								</div>
 							</a>
 							<a href="../posts/./khotite-imet--lichnyy-ili-famil-nyy-gerb.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/e06e94ebb2ac12a90a6b3411e56d2a48/5E1B1633/t51.2885-15/e35/42003682_305244800309577_3261903811635052544_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/150d4083a30286386b464f43fc44fb26/5E42A333/t51.2885-15/e35/42003682_305244800309577_3261903811635052544_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-05-06">06 May 2018</time></div>
@@ -2520,7 +2529,7 @@
 								</div>
 							</a>
 							<a href="../posts/./chetyrekhdvernyy-polnost-yu-vstroennyy-shkaf-kupe-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/fa1456f084fc596967fd43af200c649b/5E1AFA03/t51.2885-15/e35/42789722_240199336651015_6774234328642617344_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/e32a691054f4e8a38ab50ef65168ad64/5E428703/t51.2885-15/e35/42789722_240199336651015_6774234328642617344_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-05-02">02 May 2018</time></div>
@@ -2562,7 +2571,7 @@
 								</div>
 							</a>
 							<a href="../posts/./radiusnyy-shkaf-kupe-mozhet-izgotavlivat-sya-po-raznomux-v-kachestve-korpusnoy-mebelix-vstroennoy-konstr.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/4d7e7d9b1a469987c2b414f1ac8152a5/5E382123/t51.2885-15/e35/42332846_2179713695644960_8050893239751802880_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/fbffa2dfc415dd95abc9ce99a13ba2cd/5E5FAE23/t51.2885-15/e35/42332846_2179713695644960_8050893239751802880_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-04-21">21 April 2018</time></div>
@@ -2590,7 +2599,7 @@
 								</div>
 							</a>
 							<a href="../posts/./komplekt-mebeli-v-prikhozhuyu.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/81426dc3bc426d4611567323bea52db6/5E1C1BE8/t51.2885-15/e35/42611546_335801237170242_7960816776143437824_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/c6487a6d85ed0b86c9c331689b7032e2/5E43A8E8/t51.2885-15/e35/42611546_335801237170242_7960816776143437824_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Аркаим-Экспо</div>
@@ -2662,7 +2671,7 @@
 								</div>
 							</a>
 							<a href="../posts/./malogabaritnye-kukhni-ostayutsya-udelom-starogo-zhilogo-fonda-ix-k-sozhaleniyux-vozmozhnost--ikh-uvelichit--e.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/77aaee7efc13ce29fba19b5c0ffdfed6/5E1AB583/t51.2885-15/e35/42619767_252383342137613_7842695206884343808_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/29b7a7f88b7c2f93f3fe3e68bdbb30d2/5E424283/t51.2885-15/e35/42619767_252383342137613_7842695206884343808_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-03-28">28 March 2018</time></div>
@@ -2705,7 +2714,7 @@
 								</div>
 							</a>
 							<a href="../posts/./stol-rukovoditelya.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/9484e13c736bfd3c0cd6274593142a85/5E3A10D8/t51.2885-15/e35/42002485_1795992927164527_4844897872107274240_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/448e257c61e961e536863304dc537bf3/5E619DD8/t51.2885-15/e35/42002485_1795992927164527_4844897872107274240_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-03-21">21 March 2018</time></div>
@@ -2789,7 +2798,7 @@
 								</div>
 							</a>
 							<a href="../posts/./dobroe-utrox-druz-ya-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/28d41cc136bb0a5260c6f7b2d54f3f9c/5E39A2C8/t51.2885-15/e35/43064244_211638456230735_7330370754535489536_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/dc39f2a0d17860ba4be7199a38143525/5E612FC8/t51.2885-15/e35/43064244_211638456230735_7330370754535489536_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-02-22">22 February 2018</time></div>
@@ -2817,7 +2826,7 @@
 								</div>
 							</a>
 							<a href="../posts/./chetyrekhdvernyy-vstroennyy-shkaf-kupe-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/37bb5748fd076db892634963f4a90f87/5E3994D2/t51.2885-15/e35/41565135_248263939224907_7392957099577180160_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/81ff2621ba2da18258781100643ec1b8/5E6121D2/t51.2885-15/e35/41565135_248263939224907_7392957099577180160_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-02-12">12 February 2018</time></div>
@@ -2860,7 +2869,7 @@
 								</div>
 							</a>
 							<a href="../posts/./chetyrekhdvernyy-vstroennyy-shkaf-kupe-2.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/a20659d4b230a1490a7648e329d321c1/5E37D04F/t51.2885-15/e35/42004154_1766845273437275_420741748004749312_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/cd87628680656138fc5780396854bae6/5E5F5D4F/t51.2885-15/e35/42004154_1766845273437275_420741748004749312_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Аркаим-Экспо</div>
@@ -2889,7 +2898,7 @@
 								</div>
 							</a>
 							<a href="../posts/./khotite-imet--lichnyy-ili-famil-nyy-gerb-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/7f75f117c0b7ad0025f5df17c1181672/5E3943C4/t51.2885-15/e35/43015383_192803158280638_6092251091779452928_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/8a9f1e05ae235147cef78a7ad5f2533d/5E60D0C4/t51.2885-15/e35/43015383_192803158280638_6092251091779452928_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-01-28">28 January 2018</time></div>
@@ -2931,7 +2940,7 @@
 								</div>
 							</a>
 							<a href="../posts/./izgotovlenie-detskoy-mebeli-yavlyaetsya-nashey-izlyublennoy-tematikoy.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/cdb308f9b12389d56c9a7a87e8cec697/5E383B21/t51.2885-15/e35/42078485_2152884861637066_7233895468260917248_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/0adf2761a5c37c14ec31713f7234b20a/5E5FC821/t51.2885-15/e35/42078485_2152884861637066_7233895468260917248_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-01-20">20 January 2018</time></div>
@@ -2945,7 +2954,7 @@
 								</div>
 							</a>
 							<a href="../posts/./vstroennoe-shkaf-kupe-v-prikhozhey.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/0bb38bd8f316855df568da75b32d2da6/5E1A3013/t51.2885-15/e35/42002639_334301647321138_182201227184963584_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/1cccb68a21c3122b110feff351684e82/5E41BD13/t51.2885-15/e35/42002639_334301647321138_182201227184963584_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-01-19">19 January 2018</time></div>
@@ -3128,7 +3137,7 @@
 								</div>
 							</a>
 							<a href="../posts/./s-pomoshch-yu-myagkikh-paneley-mozhno-izmenit--dazhe-samyy-zauryadnyy-inter-erx-sdelav-ego-yarkim-i-privlekate.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/685f7983d23927aed16bb576ec5386e2/5DA55BD3/t51.2885-15/e35/41636047_178982852995219_59219477228683264_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/abb97086163a2649ce138b783a1d58b5/5DA8A793/t51.2885-15/e35/41636047_178982852995219_59219477228683264_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-12-14">14 December 2017</time></div>
@@ -3156,7 +3165,7 @@
 								</div>
 							</a>
 							<a href="../posts/./fotopechat--risunka-pozvolyaet-nanosit--na-shkafy-kupe-izobrazheniya-absolyutno-lyuboy-slozhnosti-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/8c38567237989545462152dee22d28d2/5E3A2A13/t51.2885-15/e35/42839572_2218663458417771_8599082490088390656_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/c53cc68317ddb7b273e0d886ebaf9643/5E61B713/t51.2885-15/e35/42839572_2218663458417771_8599082490088390656_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-12-07">07 December 2017</time></div>
@@ -3283,7 +3292,7 @@
 								</div>
 							</a>
 							<a href="../posts/./stil-nye-shkafy-kupe-s-kozhey-obogashchayut-i-pridayut-solidnost--lyubomu-pomeshcheniyu-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/6925c5786ae13fd1c3254cfc58c13d98/5E39503F/t51.2885-15/e35/41673079_305643540251020_2670337723776106496_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/41846e48c4c72202af7aefceed7cafc4/5E60DD3F/t51.2885-15/e35/41673079_305643540251020_2670337723776106496_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Аркаим-Экспо</div>
@@ -3313,7 +3322,7 @@
 								</div>
 							</a>
 							<a href="../posts/./zerkala-v-prikhozhey-dobavlyayut-svobodnogo-prostranstva-i-sveta.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/a96455e9f705000f80cf1de4f42d514c/5DA5484C/t51.2885-15/e35/41731032_1336431623160157_4561137431629266944_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/bb488502e297998e68671420eb6fcae0/5DA8940C/t51.2885-15/e35/41731032_1336431623160157_4561137431629266944_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Аркаим-Экспо</div>
@@ -3431,7 +3440,7 @@
 								</div>
 							</a>
 							<a href="../posts/./divan--shtil-.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/07d58d4b4195ceeab4c8891eb09bed66/5E39F5C3/t51.2885-15/e35/41722759_254072975301047_1604622003946389504_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/39edf3dcdf41e09b14261ce3f7d0dfcd/5E6182C3/t51.2885-15/e35/41722759_254072975301047_1604622003946389504_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-10-21">21 October 2017</time></div>
@@ -3460,7 +3469,7 @@
 								</div>
 							</a>
 							<a href="../posts/./barnaya-stoyka-na-kukhne-v-nastoyashchee-vremya-stala-ochen--populyarna.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/f363b9b1b714189802c526c69473f2f3/5E1CAD15/t51.2885-15/e35/42596272_553204638498881_7803618580813053952_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/c8bd4a0af709d3ac8fce665f9d90f59d/5E443A15/t51.2885-15/e35/42596272_553204638498881_7803618580813053952_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Аркаим-Экспо</div>
@@ -3490,7 +3499,7 @@
 								</div>
 							</a>
 							<a href="../posts/./sdelaem-kukhnyu-na-zakaz-po-vashim-razmeram-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/fdd30fbb0d12ed886f7b6eec39e2f595/5E1BA7E5/t51.2885-15/e35/42611548_177198603170337_5579588127288197120_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/a0776466631fb2cbce22d6b42c3b1fe5/5E4334E5/t51.2885-15/e35/42611548_177198603170337_5579588127288197120_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-10-07">07 October 2017</time></div>
@@ -3532,7 +3541,7 @@
 								</div>
 							</a>
 							<a href="../posts/./my-predlagaem-izgotovleniexdverey-kupe-na-zakaz-po-vashim-razmeram.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b764390ab199497a5596c8fc54f164b4/5E1ADAC8/t51.2885-15/e35/41537550_1688246564634819_992883103238193152_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/8887f9bc3a3d6056728c44944d5084d6/5E4267C8/t51.2885-15/e35/41537550_1688246564634819_992883103238193152_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-09-08">08 September 2017</time></div>
@@ -3560,7 +3569,7 @@
 								</div>
 							</a>
 							<a href="../posts/./my-sozdayom-elegantnuyu-mebel--v-tekhnike-xkaretnaya-styazhkax-dlya-izyskannykh-inter-erov.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/4e7d0421e961a4b142965773c530a7f5/5E38399C/t51.2885-15/e35/42747830_582027928883522_6820525305770278912_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b5b06af1c8458e01e46c30efc4ea9535/5E5FC69C/t51.2885-15/e35/42747830_582027928883522_6820525305770278912_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-08-24">24 August 2017</time></div>
@@ -3588,7 +3597,7 @@
 								</div>
 							</a>
 							<a href="../posts/./steklyannyy-fartuk-ne-imeet-stykovx-kotorye-bystro-zabivayutsya-gryaz-yu-2.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/f1c7f19d873c312181327f26959cc292/5E380C89/t51.2885-15/e35/41463865_240172620178031_740192653747945472_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/30d6ebe136587305669967c5fa61da04/5E5F9989/t51.2885-15/e35/41463865_240172620178031_740192653747945472_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-08-14">14 August 2017</time></div>
@@ -3616,7 +3625,7 @@
 								</div>
 							</a>
 							<a href="../posts/./fotopechat--na-steklex--noveyshaya-tekhnologiya-dekorativnoy-obrabotki-stekla.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/f9194e274dafa7170bd966f2c1cf39f1/5E1A131E/t51.2885-15/e35/42068976_154451808825857_4110991650321334272_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/7b1bb7fa4e6cc1c1172c2926b90e1dd1/5E41A01E/t51.2885-15/e35/42068976_154451808825857_4110991650321334272_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-07-27">27 July 2017</time></div>
@@ -3714,7 +3723,7 @@
 								</div>
 							</a>
 							<a href="../posts/./izgotavlivaem-takzhe-mebel--lyuboy-slozhnosti-dlya-yuridicheskikh-lits.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/fe69476601bc4c3f673359c521a651e3/5E1A7673/t51.2885-15/e35/42785528_340364403399735_5273760784793468928_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/8322d5ed18dde55796ecfe09d5a59e59/5E420373/t51.2885-15/e35/42785528_340364403399735_5273760784793468928_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-03-03">03 March 2017</time></div>
@@ -3728,7 +3737,7 @@
 								</div>
 							</a>
 							<a href="../posts/./izgotovlenie-kukhon--na-zakaz-po-individual-nym-razmeram---eto-nash-profil-x-nad-kotorym-my-rabotaem-u.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b23318c431346de3834f9e7ef6965500/5DA5A4E7/t51.2885-15/e15/41926966_335822433833735_4951054066206638080_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/272ebb3631516e39aa2e0e865cb4512a/5DA8F0A7/t51.2885-15/e15/41926966_335822433833735_4951054066206638080_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-03-01">01 March 2017</time></div>
@@ -3826,7 +3835,7 @@
 								</div>
 							</a>
 							<a href="../posts/./pridat--inter-eru-spal-nix-gostinoy-ili-prikhozhey-individual-nost-x-sdelat--inter-er-bolee-produmanny-2.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/2b9c7cf4a63f544f9aa26f0ac10d61d2/5E1AC666/t51.2885-15/e35/42003151_903280693194446_8990721234752765952_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/00eb144f3ef1bbaa8e39059828e18d65/5E425366/t51.2885-15/e35/42003151_903280693194446_8990721234752765952_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-01-05">05 January 2017</time></div>
@@ -3840,7 +3849,7 @@
 								</div>
 							</a>
 							<a href="../posts/./konsul-tatsiya-i-zapis--na-zamerx-8-x927x-305-36-73-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/fdc8ed09b7bf124972d343052ffd0d0a/5DA536D4/t51.2885-15/e15/41739260_1956401271091169_2727018321282072576_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/1eba24ce9daeb6e6c44905ae134e7151/5DA88294/t51.2885-15/e15/41739260_1956401271091169_2727018321282072576_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-01-05">05 January 2017</time></div>
@@ -3868,7 +3877,7 @@
 								</div>
 							</a>
 							<a href="../posts/./volnoobraznye-radiusnye-shkafy-podkhodyat-dlya-dostatochno-bol-shikh-razmerov.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/5c60dc906033bb35fd46d7b9f64f1675/5E1BCF90/t51.2885-15/e35/41854076_246817709369695_3726898540425773056_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/a98a6e7985abddf682142f31c283298a/5E435C90/t51.2885-15/e35/41854076_246817709369695_3726898540425773056_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-06-23">23 June 2016</time></div>
@@ -3882,7 +3891,7 @@
 								</div>
 							</a>
 							<a href="../posts/./shkaf-kupe-v-detskuyu-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/06dc0b33663e7199378c126aeb04b999/5E39A3E0/t51.2885-15/e35/42345017_565253373878000_2499603350601859072_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/1402c0eee5853804251a63662f8f7f9f/5E6130E0/t51.2885-15/e35/42345017_565253373878000_2499603350601859072_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-06-20">20 June 2016</time></div>
@@ -4065,7 +4074,7 @@
 								</div>
 							</a>
 							<a href="../posts/./xeshche-odin-shkaf-v-prikhozhuyu--ustanovlen-x.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/9eaff270f4270ca014a32c771ddfeaee/5E1AAA5B/t51.2885-15/e35/45949589_2038293806460827_1814225240759315881_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/efe966b961f53d3d12d65fe646084c64/5E42375B/t51.2885-15/e35/45949589_2038293806460827_1814225240759315881_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-11-10">10 November 2018</time></div>
@@ -4219,7 +4228,7 @@
 								</div>
 							</a>
 							<a href="../posts/./trekhdvernyy-shkaf-kupe-s-sploshnymi-glyantsevymi-belymi-steklami.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/0dd4a52e5c231de9deb653642bcbaff9/5DA54C9C/t51.2885-15/e35/42896398_478218802677816_948095683952519548_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/7a0d4b3405df762e4bdd0e00b1c42fff/5DA8985C/t51.2885-15/e35/42896398_478218802677816_948095683952519548_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-10-12">12 October 2018</time></div>
@@ -4233,7 +4242,7 @@
 								</div>
 							</a>
 							<a href="../posts/./otlichnyy-sposob-ozhivit--i-raskrasit--samyy-skuchnyy-i-obychnyy-inter-er---eto-mebel-noe-dekorativnoe-s.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b38b675d42e67b98f77a033fac3f0879/5E1AA007/t51.2885-15/e35/42798625_591783421281671_5598915400101428822_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/150a1f6f094444c33583343bea6e1a37/5E422D07/t51.2885-15/e35/42798625_591783421281671_5598915400101428822_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-10-10">10 October 2018</time></div>
@@ -4276,7 +4285,7 @@
 								</div>
 							</a>
 							<a href="../posts/./bordovaya-kukhnya-x-ottenok-krasnogox-no-on-ne-stol--krichashchiy-i-yarkiy.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/49654e679c3a4aca38e1afe57f5edfee/5DA5A608/t51.2885-15/e35/41781175_631089470619106_4436892282726137319_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/d6efc3debda5525e757e7cfad4878eb1/5DA8F1C8/t51.2885-15/e35/41781175_631089470619106_4436892282726137319_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-10-06">06 October 2018</time></div>
@@ -4402,7 +4411,7 @@
 								</div>
 							</a>
 							<a href="../posts/./xkrovat---eshli-x.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/2447fe35771899b3c59311bfffa87532/5E3A847F/t51.2885-15/e35/41296648_1358977747565895_6570475036508106398_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/0e6b8482e0909adf9bb4c19fd3134e6a/5E62117F/t51.2885-15/e35/41296648_1358977747565895_6570475036508106398_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-09-20">20 September 2018</time></div>
@@ -4416,7 +4425,7 @@
 								</div>
 							</a>
 							<a href="../posts/./ecli-vam-nuzhna-kachestvennaya-kukhnya-pod-pazumnyy-byudzhetxxx-to-vy-obratilis--po-adpecu.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/3d602b267f6d23213dccc57d98242be5/5DA55977/t51.2885-15/e35/40453301_2215371362016261_8961372328783743648_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/ba41d08700f1f4c696046fd6ffe8a228/5DA8A537/t51.2885-15/e35/40453301_2215371362016261_8961372328783743648_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-09-14">14 September 2018</time></div>
@@ -4503,7 +4512,7 @@
 								</div>
 							</a>
 							<a href="../posts/./shkafy-kupe-i-tv-zona-v-gostinuyu.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/a5e682941098233940c44f7064906632/5E39722A/t51.2885-15/e35/41581677_343555012855355_4664773003911888896_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/77a92ad3900956b8277039bbd076407d/5E60FF2A/t51.2885-15/e35/41581677_343555012855355_4664773003911888896_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-08-08">08 August 2018</time></div>
@@ -4545,7 +4554,7 @@
 								</div>
 							</a>
 							<a href="../posts/./xxu-nas-vy-mozhete-zakazat-xshkaf-kupexxsxfotopechat-yuxdlya-gostinoyx-prikhozheyx-spal-nix-detskoy.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/21c665fdca7d31e90e9105fbda2b9152/5E392AFF/t51.2885-15/e35/41709727_478479362666775_849180992231964672_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/6eea151edea27c2b7c80077e8f20dcdf/5E60B7FF/t51.2885-15/e35/41709727_478479362666775_849180992231964672_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Парк Победы Уфа, Башкортостан</div>
@@ -4588,7 +4597,7 @@
 								</div>
 							</a>
 							<a href="../posts/./kukhnya--s-glyantsevymixfasadami-tsveta-bordo--metallik.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/20914d338c4dd0d2cf75dfede1b61859/5DA52119/t51.2885-15/e35/42431692_1846073782129146_6009981298167250944_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/0f88e1f790f0dec8f2ee15fc881bacd0/5DA86CD9/t51.2885-15/e35/42431692_1846073782129146_6009981298167250944_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-07-09">09 July 2018</time></div>
@@ -4672,7 +4681,7 @@
 								</div>
 							</a>
 							<a href="../posts/./esli-vy-nikak-ne-mozhete-reshit--kakoy-tsvet-vybrat--dlya-kukhnix-ostanovites--na-belom.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/19ceb1d4c409c82480053517a21635e2/5E3A0911/t51.2885-15/e35/42794188_244738452886818_301638125883490304_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/5823f49a509e806561650d1e1f4ea60f/5E619611/t51.2885-15/e35/42794188_244738452886818_301638125883490304_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-06-23">23 June 2018</time></div>
@@ -4686,7 +4695,7 @@
 								</div>
 							</a>
 							<a href="../posts/./krovat---standart.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/15e45973927eb812fca641ee3d3cd2b1/5E390CCF/t51.2885-15/e35/41823557_270516033578970_7514851552792674304_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/889022687f12b60344f92be40357a1d5/5E6099CF/t51.2885-15/e35/41823557_270516033578970_7514851552792674304_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-06-22">22 June 2018</time></div>
@@ -4700,7 +4709,7 @@
 								</div>
 							</a>
 							<a href="../posts/./nash-noven-kiy-radiusnyy-shkaf-kupe.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/78a492dd86e4d717b76157daf9923b15/5E1B8808/t51.2885-15/e35/41773063_909211229466407_2378716483829104640_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/169f6bf072f1cee790bc2e3419d497a6/5E431508/t51.2885-15/e35/41773063_909211229466407_2378716483829104640_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-06-21">21 June 2018</time></div>
@@ -4714,7 +4723,7 @@
 								</div>
 							</a>
 							<a href="../posts/./fotopechat-yu-mozhno-ukrasit--ne-tol-ko-kukhonnye-fartukix-no-i--mebel-nye-fasady.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/2a0fc90f80f15dd9b870f084a5d93919/5E1C4AD8/t51.2885-15/e35/42496927_2173647866209803_1528487760095084544_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/5dbbcce24a09b3004718c6b60d2461ed/5E43D7D8/t51.2885-15/e35/42496927_2173647866209803_1528487760095084544_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-06-20">20 June 2018</time></div>
@@ -4728,7 +4737,7 @@
 								</div>
 							</a>
 							<a href="../posts/./glavnye-kharakteristiki-detskogo-shkafa-kupex-xxkrasivyyx-yarkiy-dizayn.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b4a391c5f7bb81df4dcb8effe21d0ef3/5E398BDC/t51.2885-15/e35/41791715_248706235835509_170402067259588608_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/3e424b5160eff940efd0476075a9247f/5E6118DC/t51.2885-15/e35/41791715_248706235835509_170402067259588608_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-06-19">19 June 2018</time></div>
@@ -4994,7 +5003,7 @@
 								</div>
 							</a>
 							<a href="../posts/./ruchki-dlya-mebeli-so-strazamix-navernoe-kak-nikakie-drugie-sposobny-vypolnyat--ne-tol-ko-prakticheskoe-.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/d6883dc5b0b76cf4bbe3285777baf596/5DA5AC35/t51.2885-15/e35/41744230_1896567973760334_2505407298822733824_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/37079599cc005cb992e4e36b7089cd39/5DA8F7F5/t51.2885-15/e35/41744230_1896567973760334_2505407298822733824_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-04-23">23 April 2018</time></div>
@@ -5051,7 +5060,7 @@
 								</div>
 							</a>
 							<a href="../posts/./zdes--my-izgotovili-i-ustanovili-tol-ko-dveri-kupe.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/92ddae64bd7db44d6594103b95bd7a8e/5E19E022/t51.2885-15/e35/41724487_548506778923116_7679293837532987392_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b2ada6929e12ead666e9e549996b337c/5E416D22/t51.2885-15/e35/41724487_548506778923116_7679293837532987392_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-map-marker" aria-hidden="true"></i>Аркаим-Экспо</div>
@@ -5066,7 +5075,7 @@
 								</div>
 							</a>
 							<a href="../posts/./udobno-raspolozhit--veshchi-dazhe-vxnebol-shoy-kvartire-mozhno-v-mini-garderobnoy-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/e41fa9b18477d975cbb6de8c7b7f2782/5E3A3D97/t51.2885-15/e35/41994193_1964874733594837_5733246298904068096_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/1f44841a5dd3d366c3d0090205aad024/5E61CA97/t51.2885-15/e35/41994193_1964874733594837_5733246298904068096_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-04-01">01 April 2018</time></div>
@@ -5137,7 +5146,7 @@
 								</div>
 							</a>
 							<a href="../posts/./my-mozhem-izgotovit--dveri-kupe-shkafax-pod-vashi-mezhkomnatnye-dveri.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/ef4e0a74fd2dd9f80b2bdde2d2e33738/5E3A9BAF/t51.2885-15/e35/42002931_266858823967049_4726685099217649664_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/6db3a3e387acf249be647c31b0620e9d/5E6228AF/t51.2885-15/e35/42002931_266858823967049_4726685099217649664_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-03-05">05 March 2018</time></div>
@@ -5165,7 +5174,7 @@
 								</div>
 							</a>
 							<a href="../posts/./shkaf-kupe-s-fotopechat-yuxzadaet-nastroenie-inter-era.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/11e7d6831b0fd8f950a94243bef47f18/5E1B6A76/t51.2885-15/e35/42443771_550349828738508_3521165337749880832_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/9e37fd17acd4523a081f7f8cb3e73eb6/5E42F776/t51.2885-15/e35/42443771_550349828738508_3521165337749880832_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-02-26">26 February 2018</time></div>
@@ -5207,7 +5216,7 @@
 								</div>
 							</a>
 							<a href="../posts/./-svezhen-kiy--shkaf-kupe.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/be941cd58acff8208e5fa7a22a5c7044/5E1BF66A/t51.2885-15/e35/42968477_1258552937619206_860804041318334464_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/bd741f2491c1165e736095d672416bf9/5E43836A/t51.2885-15/e35/42968477_1258552937619206_860804041318334464_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-02-20">20 February 2018</time></div>
@@ -5250,7 +5259,7 @@
 								</div>
 							</a>
 							<a href="../posts/./shkafy-kupe-v-prikhozhuyux-gostinuyux-spal-nyux-detskuyux-na-lodzhiyu.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/7d7aeb7cf6a505f003ed35934838fbd9/5E3A0457/t51.2885-15/e35/41640987_868978933307144_4170128397889961984_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/d0c001880b171ddf7c81bfe6b660b23b/5E619157/t51.2885-15/e35/41640987_868978933307144_4170128397889961984_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-02-03">03 February 2018</time></div>
@@ -5364,7 +5373,7 @@
 								</div>
 							</a>
 							<a href="../posts/./trekhdvernyy-shkafy-kupe.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/43a2358106dc9a1466f5cc31fbb61ad8/5E39D85C/t51.2885-15/e35/41711506_777518675950127_4929268836735123456_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/a718fb258652cc3c8a4bcdd971b44f97/5E61655C/t51.2885-15/e35/41711506_777518675950127_4929268836735123456_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-12-05">05 December 2017</time></div>
@@ -5463,7 +5472,7 @@
 								</div>
 							</a>
 							<a href="../posts/./radiusnye-shkafy-kupe-mozhno-vstretit--v-lyuboy-komnatex-u-nikh-net-chetkogo-prednaznacheniya.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/53c54f3676202e35627fdf1f10bd89fe/5E394253/t51.2885-15/e35/42097464_2151255775144565_6805029098126049280_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/baaf05b32b19ada61e5110c818ed1610/5E60CF53/t51.2885-15/e35/42097464_2151255775144565_6805029098126049280_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-11-30">30 November 2017</time></div>
@@ -5547,7 +5556,7 @@
 								</div>
 							</a>
 							<a href="../posts/./shkaf-kupe-v-tsvete--mentol-.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/58334981a191da503d6b1e2dbefc616c/5E1B82DB/t51.2885-15/e35/41656318_294501064486592_6956765443675652096_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/722928242fc4cd22bd4c5266e7dd6da6/5E430FDB/t51.2885-15/e35/41656318_294501064486592_6956765443675652096_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-11-27">27 November 2017</time></div>
@@ -5604,7 +5613,7 @@
 								</div>
 							</a>
 							<a href="../posts/./na-etape-sborkixx.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/8304fc5b508dc719a2b915916256626e/5E38A2D0/t51.2885-15/e35/41663206_2019875318304460_1646388559445229568_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/7d0b6b39faf88f7bdea3eb47bb2e6296/5E602FD0/t51.2885-15/e35/41663206_2019875318304460_1646388559445229568_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-11-24">24 November 2017</time></div>
@@ -5675,7 +5684,7 @@
 								</div>
 							</a>
 							<a href="../posts/./oranzhevye-ottenki-ochen--pozitivnyexxx-poetomu-takaya-kukhnya-bystro-podnimaet-nastroeniexx-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/c6fcd9079b3d19b66ac4746f4a2ebfc5/5E399515/t51.2885-15/e35/41782778_1336795229788550_563446541835042816_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b967a5710af22c7952b1f5b5a004fc8d/5E612215/t51.2885-15/e35/41782778_1336795229788550_563446541835042816_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-11-21">21 November 2017</time></div>
@@ -5689,7 +5698,7 @@
 								</div>
 							</a>
 							<a href="../posts/./uglovye-shkafy-kupe---eto-ne-prosto-krasivye-shkafyx-oni-ochen--praktichnyx-funktsional-ny-i-ochen--vmesti.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/308c1634b1404e98ab53e49e3147b4a0/5E390660/t51.2885-15/e35/41732584_2332924143389259_2788260582078283776_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/26b3488801f2a5c94caedf276e91fe5e/5E609360/t51.2885-15/e35/41732584_2332924143389259_2788260582078283776_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-11-21">21 November 2017</time></div>
@@ -5805,7 +5814,7 @@
 								</div>
 							</a>
 							<a href="../posts/./dobryy-vecherxdruz-ya-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/6ac0f0b620d86c19cc9ea3f86b50d028/5E399388/t51.2885-15/e35/42496442_326518658152719_3148080289163509760_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/47711a0c0fa5d03f5e029ae2dce8bb2c/5E612088/t51.2885-15/e35/42496442_326518658152719_3148080289163509760_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-11-01">01 November 2017</time></div>
@@ -5983,7 +5992,7 @@
 								</div>
 							</a>
 							<a href="../posts/./radiusnye-shkafy-vsegda-vydelyayutsya-na-fone-ostal-noy-mebelix-delaya-inter-er-sovremennym-i-neobychnym.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/28b35a68181d7c36a999730ac0937c3e/5E388244/t51.2885-15/e35/42003873_551313095325448_483567636257439744_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/9d6eb81a4212bc5fa92a4d91b3136c97/5E600F44/t51.2885-15/e35/42003873_551313095325448_483567636257439744_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-10-05">05 October 2017</time></div>
@@ -6053,7 +6062,7 @@
 								</div>
 							</a>
 							<a href="../posts/./radiusnye-shkafy-kupe-mozhno-ustanovit--v-lyuboy-komnatex-u-nikh-net-chetkogo-prednaznacheniya.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/3bfdff4820774c5606579f945db6a928/5E1AB7A2/t51.2885-15/e35/41707336_1856421127769666_4014708559538290688_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/cd2c9198c958175698c166251ea93cce/5E4244A2/t51.2885-15/e35/41707336_1856421127769666_4014708559538290688_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-09-10">10 September 2017</time></div>
@@ -6193,7 +6202,7 @@
 								</div>
 							</a>
 							<a href="../posts/./esli-vy-ne-znaetex-gde-mozhno-kupit--shkaf-na-zakaz-napryamuyu-ot-proizvoditelya-i-pri-etom-ne-pereplatit.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/c46e6dc1281fdaf265c173ed33ebf535/5E39E50E/t51.2885-15/e35/41523334_248264949205757_662483707382202368_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/e03edc05ad8f32cafcb426bbdd48a6e3/5E61720E/t51.2885-15/e35/41523334_248264949205757_662483707382202368_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-07-29">29 July 2017</time></div>
@@ -6235,7 +6244,7 @@
 								</div>
 							</a>
 							<a href="../posts/./v-stremlenii-k-neobychnomu-dekoratory-pridumyvayut-mnogo-interesnykh-form-v-privychnykh-predmetakh-domashne-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/2944688714cde4528094e105ed6d668d/5E38C909/t51.2885-15/e35/41707384_155222092085154_5562511852715376640_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/9916acb6563b6f66cb6d174d26bae356/5E605609/t51.2885-15/e35/41707384_155222092085154_5562511852715376640_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-07-22">22 July 2017</time></div>
@@ -6263,7 +6272,7 @@
 								</div>
 							</a>
 							<a href="../posts/./shkaf-kupex-nakhodyashchayasya-v-detskoy--komnate-dolzhna-byt--yarkoy-i-privlekatel-noy.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/da505a55afc9d879c175732fd1ef6950/5E1B16E6/t51.2885-15/e35/42002986_321350862000680_5780631526324568064_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/40f898ec32339f50dfde149fbaa88218/5E42A3E6/t51.2885-15/e35/42002986_321350862000680_5780631526324568064_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-06-01">01 June 2017</time></div>
@@ -6277,7 +6286,7 @@
 								</div>
 							</a>
 							<a href="../posts/./my-predlagaem-udobnuyu-i-stil-nuyu-mebel---dlya-ofisovx-dlya-personala-i-kabineta-rukovoditelyax-otlichayushch.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/2019e469ecbd936f48d0e9b4f2a674d1/5E1BA1F8/t51.2885-15/e35/42068605_1891048717642188_5806752469446819840_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/2aa4283b4321282432109348b6a53f39/5E432EF8/t51.2885-15/e35/42068605_1891048717642188_5806752469446819840_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-05-19">19 May 2017</time></div>
@@ -6361,7 +6370,7 @@
 								</div>
 							</a>
 							<a href="../posts/./kukhni-na-zakaz-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/e7cebdf621d0f4bd1a4333e0a05194a9/5E38B154/t51.2885-15/e35/42557923_312043449581661_4986208077171654656_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/1cb03055a1a32a17c0bb7ac720a17172/5E603E54/t51.2885-15/e35/42557923_312043449581661_4986208077171654656_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-02-09">09 February 2017</time></div>
@@ -6417,7 +6426,7 @@
 								</div>
 							</a>
 							<a href="../posts/./my-predlagaem-shirokiy-vybor-shkafov-kupe-s-kozhanymi-vstavkami-v-gostinuyux-spal-nyux-prikhozhuyux-ofis.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/6f1689e697444006b75665ee9e8d019c/5E37A95F/t51.2885-15/e35/42346830_366713837402058_7829492322797617152_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/99b9907a7ec4a54f5ee13cefa648cd06/5E5F365F/t51.2885-15/e35/42346830_366713837402058_7829492322797617152_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-01-09">09 January 2017</time></div>
@@ -6431,7 +6440,7 @@
 								</div>
 							</a>
 							<a href="../posts/./stil-nye-shkafy-kupe-s-kozhey-obogashchayut-i-pridayut-solidnost--lyubomu-pomeshcheniyu-2.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/a58a11c630c901e723eb41ec3e95949e/5E3A80F6/t51.2885-15/e35/41816214_478622022657868_618735870584815616_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/6c831e6f3ead5c5976c25d17df73aa80/5E620DF6/t51.2885-15/e35/41816214_478622022657868_618735870584815616_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-01-09">09 January 2017</time></div>
@@ -6445,7 +6454,7 @@
 								</div>
 							</a>
 							<a href="../posts/./6000-rub.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/016b871a5d395544ebe2b5d4538db71b/5E1CC8F8/t51.2885-15/e35/42002612_845013582556140_7201150890999283712_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/852d109d71f64f719c4685ce71456a32/5E4455F8/t51.2885-15/e35/42002612_845013582556140_7201150890999283712_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-06-30">30 June 2016</time></div>
@@ -6473,7 +6482,7 @@
 								</div>
 							</a>
 							<a href="../posts/./v-otlichie-ot-standartnykh-shkafov-radiusnye-shkafa-kupe-bolee-funktsional-ny-i-vmestitel-ny.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/eb58094874f890e6676f6e73bf8fbdce/5E378BE8/t51.2885-15/e35/43043346_528943094235301_5924867016434384896_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/8e8ee926723b59baa90a67a4c72a0a84/5E5F18E8/t51.2885-15/e35/43043346_528943094235301_5924867016434384896_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-06-23">23 June 2016</time></div>
@@ -6487,7 +6496,7 @@
 								</div>
 							</a>
 							<a href="../posts/./komplekt-mebeli-v-detskuyu-komnatu-5.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/e4e540d9a81e2d48e9881aa797c8ea4d/5E37FACB/t51.2885-15/e35/41763521_467300000425543_2642948790343958528_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/a883d9745a1cce71754da444e9160850/5E5F87CB/t51.2885-15/e35/41763521_467300000425543_2642948790343958528_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-06-20">20 June 2016</time></div>
@@ -6515,7 +6524,7 @@
 								</div>
 							</a>
 							<a href="../posts/./mebel--dlya-detskoy-komnaty-1.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/f83b3ebe4a6fca71bc2e0c52ac38128a/5E3AD807/t51.2885-15/e35/42566935_294101404523412_5544265117950017536_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/cca6ecc463a3fb40c567eda4a7ab5551/5E626507/t51.2885-15/e35/42566935_294101404523412_5544265117950017536_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-06-20">20 June 2016</time></div>
@@ -6655,7 +6664,7 @@
 								</div>
 							</a>
 							<a href="../posts/./3500-rubley.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/fe52ab9c726cefcfda4ed7ea35f329be/5E1BA6A7/t51.2885-15/e35/41026026_879881059067516_372547632213524480_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/3a3ef60c784571eddf6eb3391cb68c90/5E4333A7/t51.2885-15/e35/41026026_879881059067516_372547632213524480_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-02-09">09 February 2016</time></div>
@@ -6697,7 +6706,7 @@
 								</div>
 							</a>
 							<a href="../posts/./sushilka-dlya-posudy-s-dvumya-poddonamix-khromirovannaya-stal-.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b7f5dc407b8c5637dafabcb1c354551d/5E1A7EAD/t51.2885-15/e35/42365154_427509167775752_5104608501477408768_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/da36ac3eba3cae6fb38488f70d077872/5E420BAD/t51.2885-15/e35/42365154_427509167775752_5104608501477408768_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-01-14">14 January 2016</time></div>
@@ -6780,11 +6789,12 @@
 			</div>
 		</div>			
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->

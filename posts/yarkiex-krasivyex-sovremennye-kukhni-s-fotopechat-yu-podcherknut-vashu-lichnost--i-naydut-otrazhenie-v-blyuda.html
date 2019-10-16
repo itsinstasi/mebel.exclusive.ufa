@@ -43,6 +43,9 @@
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="mebel.exclusive.ufa" />
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -54,7 +57,7 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -68,249 +71,255 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфа">
-								<a href="../tags/./ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufa.png" alt="уфа" /></div>
-									<div class="stories__slide-txt">уфа</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфа">
+										<a href="../tags/./ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufa.png);"></div>
+											<div class="stories__slide-txt">уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель уфа на заказ">
+										<a href="../tags/./mebel--ufa-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--ufa-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">мебель уфа на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель уфа">
+										<a href="../tags/./mebel--ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--ufa.png);"></div>
+											<div class="stories__slide-txt">мебель уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="интерьер уфа">
+										<a href="../tags/./inter-er-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/inter-er-ufa.png);"></div>
+											<div class="stories__slide-txt">интерьер уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфа интерьер">
+										<a href="../tags/./ufa-inter-er.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufa-inter-er.png);"></div>
+											<div class="stories__slide-txt">уфа интерьер</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфа мебель">
+										<a href="../tags/./ufa-mebel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufa-mebel-.png);"></div>
+											<div class="stories__slide-txt">уфа мебель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфимский интерьер">
+										<a href="../tags/./ufimskiy-inter-er.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufimskiy-inter-er.png);"></div>
+											<div class="stories__slide-txt">уфимский интерьер</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель эксклюзивуфа">
+										<a href="../tags/./mebel--eksklyuzivufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--eksklyuzivufa.png);"></div>
+											<div class="stories__slide-txt">мебель эксклюзивуфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфа мебель на заказ">
+										<a href="../tags/./ufa-mebel--na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufa-mebel--na-zakaz.png);"></div>
+											<div class="stories__slide-txt">уфа мебель на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафы уфа">
+										<a href="../tags/./shkafy-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafy-ufa.png);"></div>
+											<div class="stories__slide-txt">шкафы уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкаф уфа">
+										<a href="../tags/./shkaf-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkaf-ufa.png);"></div>
+											<div class="stories__slide-txt">шкаф уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн уфа">
+										<a href="../tags/./dizayn-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn-ufa.png);"></div>
+											<div class="stories__slide-txt">дизайн уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафы купе уфа">
+										<a href="../tags/./shkafy-kupe-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafy-kupe-ufa.png);"></div>
+											<div class="stories__slide-txt">шкафы купе уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкаф купе уфа">
+										<a href="../tags/./shkaf-kupe-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkaf-kupe-ufa.png);"></div>
+											<div class="stories__slide-txt">шкаф купе уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкаф купе уфа на заказ">
+										<a href="../tags/./shkaf-kupe-ufa-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkaf-kupe-ufa-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">шкаф купе уфа на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафы уфа на заказ">
+										<a href="../tags/./shkafy-ufa-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafy-ufa-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">шкафы уфа на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфа шкаф">
+										<a href="../tags/./ufa-shkaf.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufa-shkaf.png);"></div>
+											<div class="stories__slide-txt">уфа шкаф</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкаф уфа на заказ">
+										<a href="../tags/./shkaf-ufa-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkaf-ufa-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">шкаф уфа на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафы купе уфа на заказ">
+										<a href="../tags/./shkafy-kupe-ufa-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafy-kupe-ufa-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">шкафы купе уфа на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфа шкаф купе">
+										<a href="../tags/./ufa-shkaf-kupe.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufa-shkaf-kupe.png);"></div>
+											<div class="stories__slide-txt">уфа шкаф купе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уфа дизайн">
+										<a href="../tags/./ufa-dizayn.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ufa-dizayn.png);"></div>
+											<div class="stories__slide-txt">уфа дизайн</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="прихожая уфа">
+										<a href="../tags/./prikhozhaya-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/prikhozhaya-ufa.png);"></div>
+											<div class="stories__slide-txt">прихожая уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель вуфе">
+										<a href="../tags/./mebel--vufe.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--vufe.png);"></div>
+											<div class="stories__slide-txt">мебель вуфе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="гардероб уфа на заказ">
+										<a href="../tags/./garderob-ufa-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/garderob-ufa-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">гардероб уфа на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="гардероб уфа">
+										<a href="../tags/./garderob-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/garderob-ufa.png);"></div>
+											<div class="stories__slide-txt">гардероб уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="двери купе уфа">
+										<a href="../tags/./dveri-kupe-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dveri-kupe-ufa.png);"></div>
+											<div class="stories__slide-txt">двери купе уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="двери купе на заказуфа">
+										<a href="../tags/./dveri-kupe-na-zakazufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dveri-kupe-na-zakazufa.png);"></div>
+											<div class="stories__slide-txt">двери купе на заказуфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="прихожая уфа на заказ">
+										<a href="../tags/./prikhozhaya-ufa-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/prikhozhaya-ufa-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">прихожая уфа на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухни уфа">
+										<a href="../tags/./kukhni-ufa.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhni-ufa.png);"></div>
+											<div class="stories__slide-txt">кухни уфа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухня">
+										<a href="../tags/./kukhnya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhnya.png);"></div>
+											<div class="stories__slide-txt">кухня</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель уфа на заказ">
-								<a href="../tags/./mebel--ufa-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--ufa-na-zakaz.png" alt="мебель уфа на заказ" /></div>
-									<div class="stories__slide-txt">мебель уфа на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель уфа">
-								<a href="../tags/./mebel--ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--ufa.png" alt="мебель уфа" /></div>
-									<div class="stories__slide-txt">мебель уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="интерьер уфа">
-								<a href="../tags/./inter-er-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/inter-er-ufa.png" alt="интерьер уфа" /></div>
-									<div class="stories__slide-txt">интерьер уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфа интерьер">
-								<a href="../tags/./ufa-inter-er.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufa-inter-er.png" alt="уфа интерьер" /></div>
-									<div class="stories__slide-txt">уфа интерьер</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфа мебель">
-								<a href="../tags/./ufa-mebel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufa-mebel-.png" alt="уфа мебель" /></div>
-									<div class="stories__slide-txt">уфа мебель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфимский интерьер">
-								<a href="../tags/./ufimskiy-inter-er.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufimskiy-inter-er.png" alt="уфимский интерьер" /></div>
-									<div class="stories__slide-txt">уфимский интерьер</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель эксклюзивуфа">
-								<a href="../tags/./mebel--eksklyuzivufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--eksklyuzivufa.png" alt="мебель эксклюзивуфа" /></div>
-									<div class="stories__slide-txt">мебель эксклюзивуфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфа мебель на заказ">
-								<a href="../tags/./ufa-mebel--na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufa-mebel--na-zakaz.png" alt="уфа мебель на заказ" /></div>
-									<div class="stories__slide-txt">уфа мебель на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафы уфа">
-								<a href="../tags/./shkafy-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafy-ufa.png" alt="шкафы уфа" /></div>
-									<div class="stories__slide-txt">шкафы уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкаф уфа">
-								<a href="../tags/./shkaf-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkaf-ufa.png" alt="шкаф уфа" /></div>
-									<div class="stories__slide-txt">шкаф уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн уфа">
-								<a href="../tags/./dizayn-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn-ufa.png" alt="дизайн уфа" /></div>
-									<div class="stories__slide-txt">дизайн уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафы купе уфа">
-								<a href="../tags/./shkafy-kupe-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafy-kupe-ufa.png" alt="шкафы купе уфа" /></div>
-									<div class="stories__slide-txt">шкафы купе уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкаф купе уфа">
-								<a href="../tags/./shkaf-kupe-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkaf-kupe-ufa.png" alt="шкаф купе уфа" /></div>
-									<div class="stories__slide-txt">шкаф купе уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкаф купе уфа на заказ">
-								<a href="../tags/./shkaf-kupe-ufa-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkaf-kupe-ufa-na-zakaz.png" alt="шкаф купе уфа на заказ" /></div>
-									<div class="stories__slide-txt">шкаф купе уфа на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафы уфа на заказ">
-								<a href="../tags/./shkafy-ufa-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafy-ufa-na-zakaz.png" alt="шкафы уфа на заказ" /></div>
-									<div class="stories__slide-txt">шкафы уфа на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфа шкаф">
-								<a href="../tags/./ufa-shkaf.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufa-shkaf.png" alt="уфа шкаф" /></div>
-									<div class="stories__slide-txt">уфа шкаф</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкаф уфа на заказ">
-								<a href="../tags/./shkaf-ufa-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkaf-ufa-na-zakaz.png" alt="шкаф уфа на заказ" /></div>
-									<div class="stories__slide-txt">шкаф уфа на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафы купе уфа на заказ">
-								<a href="../tags/./shkafy-kupe-ufa-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafy-kupe-ufa-na-zakaz.png" alt="шкафы купе уфа на заказ" /></div>
-									<div class="stories__slide-txt">шкафы купе уфа на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфа шкаф купе">
-								<a href="../tags/./ufa-shkaf-kupe.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufa-shkaf-kupe.png" alt="уфа шкаф купе" /></div>
-									<div class="stories__slide-txt">уфа шкаф купе</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уфа дизайн">
-								<a href="../tags/./ufa-dizayn.html">
-									<div class="stories__slide-pic"><img src="../img/og/ufa-dizayn.png" alt="уфа дизайн" /></div>
-									<div class="stories__slide-txt">уфа дизайн</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="прихожая уфа">
-								<a href="../tags/./prikhozhaya-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/prikhozhaya-ufa.png" alt="прихожая уфа" /></div>
-									<div class="stories__slide-txt">прихожая уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель вуфе">
-								<a href="../tags/./mebel--vufe.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--vufe.png" alt="мебель вуфе" /></div>
-									<div class="stories__slide-txt">мебель вуфе</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="гардероб уфа на заказ">
-								<a href="../tags/./garderob-ufa-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/garderob-ufa-na-zakaz.png" alt="гардероб уфа на заказ" /></div>
-									<div class="stories__slide-txt">гардероб уфа на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="гардероб уфа">
-								<a href="../tags/./garderob-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/garderob-ufa.png" alt="гардероб уфа" /></div>
-									<div class="stories__slide-txt">гардероб уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="двери купе уфа">
-								<a href="../tags/./dveri-kupe-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/dveri-kupe-ufa.png" alt="двери купе уфа" /></div>
-									<div class="stories__slide-txt">двери купе уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="двери купе на заказуфа">
-								<a href="../tags/./dveri-kupe-na-zakazufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/dveri-kupe-na-zakazufa.png" alt="двери купе на заказуфа" /></div>
-									<div class="stories__slide-txt">двери купе на заказуфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="прихожая уфа на заказ">
-								<a href="../tags/./prikhozhaya-ufa-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/prikhozhaya-ufa-na-zakaz.png" alt="прихожая уфа на заказ" /></div>
-									<div class="stories__slide-txt">прихожая уфа на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухни уфа">
-								<a href="../tags/./kukhni-ufa.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhni-ufa.png" alt="кухни уфа" /></div>
-									<div class="stories__slide-txt">кухни уфа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухня">
-								<a href="../tags/./kukhnya.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhnya.png" alt="кухня" /></div>
-									<div class="stories__slide-txt">кухня</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -334,24 +343,47 @@
 					<div class="article__wrap" id="ja-article-wrap">
 						<div class="article-main">
 							<div class="article-content">
-								<div class="article-slider js-article-slider">
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/c8d9fd6739f98a9e481590064ba25275/5E644768/t51.2885-15/e35/43913747_199720354260905_402549618571147715_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/3daa3a3ceb11d218c23612308255ffa1/5E2B70AA/t51.2885-15/e35/43177809_937227323128084_3576532764744124033_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/6bb989a8525c052e59bd7ee047611aa5/5E1F79BB/t51.2885-15/e35/43598578_113038413023071_5873127363607560654_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/02eb2c9edf036113d2db12f079a6f492/5E30968C/t51.2885-15/e35/43915143_163493194606166_6951166131869715416_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/3628ddfaf13c346c8bed2dbe5be5306e/5E263C3F/t51.2885-15/e35/43778731_518976315180775_4087788890986855125_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/246eee80b27daa932e6b92e8f7fe75f2/5E3A4FE4/t51.2885-15/e35/43779486_734850616881527_7315403949620354904_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/8c10021599310554a84d8f041525bb4d/5E225B02/t51.2885-15/e35/43984382_2298159973546468_5460884823466712348_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/38c97a45e66bab020d0204f5dc50e24e/5E64376D/t51.2885-15/e35/43913238_1935389460099752_5575458220690640133_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/d7d98b7524b48d1c444b08c2316bbe50/5E27B993/t51.2885-15/e35/43539920_340323586727354_2288524347723601928_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div></div>
+								<div class="article-slider-wrap">
+									<div class="article-slider js-article-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/c8d9fd6739f98a9e481590064ba25275/5E644768/t51.2885-15/e35/43913747_199720354260905_402549618571147715_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/3daa3a3ceb11d218c23612308255ffa1/5E2B70AA/t51.2885-15/e35/43177809_937227323128084_3576532764744124033_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/6bb989a8525c052e59bd7ee047611aa5/5E1F79BB/t51.2885-15/e35/43598578_113038413023071_5873127363607560654_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/02eb2c9edf036113d2db12f079a6f492/5E30968C/t51.2885-15/e35/43915143_163493194606166_6951166131869715416_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/3628ddfaf13c346c8bed2dbe5be5306e/5E263C3F/t51.2885-15/e35/43778731_518976315180775_4087788890986855125_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/50b2a83aed29c47173f7b0e1334f1b68/5E61DCE4/t51.2885-15/e35/43779486_734850616881527_7315403949620354904_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/8c10021599310554a84d8f041525bb4d/5E225B02/t51.2885-15/e35/43984382_2298159973546468_5460884823466712348_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/38c97a45e66bab020d0204f5dc50e24e/5E64376D/t51.2885-15/e35/43913238_1935389460099752_5575458220690640133_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/d7d98b7524b48d1c444b08c2316bbe50/5E27B993/t51.2885-15/e35/43539920_340323586727354_2288524347723601928_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" class="swiper-lazy" alt="">
+											</div>
+											<div class="article-slider-pagination js-article-slider-pagination"></div>
+											<div class="article-slider-arrow article-slider-arrow--prev js-article-slider-prev"></div>
+											<div class="article-slider-arrow article-slider-arrow--next js-article-slider-next"></div>
+										</div>
+									</div>
 								</div>
 								<p>ЯРКИЕ, КРАСИВЫЕ, СОВРЕМЕННЫЕ КУХНИ С ФОТОПЕЧАТЬЮ ПОДЧЕРКНУТ ВАШУ ЛИЧНОСТЬ И НАЙДУТ ОТРАЖЕНИЕ В БЛЮДАХ, ПРИГОТОВЛЕННЫХ С ЛЮБОВЬЮ НА КУХНЕ ВАШЕГО НАСТРОЕНИЯ. ТАКАЯ КУХНЯ ДЛЯ ЛЮДЕЙ, ПОДДЕРЖИВАЮЩИХ СВОБОДУ САМОВЫРАЖЕНИЯ И ЖИВУЩИХ ЯРКОЙ ЖИЗНЬЮ. ДА ВОСТОРЖЕСТВУЕТ ЦВЕТ! ЯРКИЕ ДЕТАЛИ БУДУТ ВЫИГРЫШНЫМИ В ИНТЕРЬЕРЕ КУХНИ. <br/>Благодаря такому современному элементу как ФОТОПЕЧАТЬ НА ФАСАДАХ И ФАРТУКЕ, возможно стильное и нестандартное дизайнерское оформление кухни. Фотопечать в этом случае играет весомую роль. Такое изменение привычной обстановки благоприятно с психологической точки зрения. Ведь намного приятнее кушать в красивой обстановке. Важно учитывать несколько основных хитростей: <br/>Чтобы окончательно определиться с выбором стоит обратить внимание на его весомые преимущества. !- Основная тематика оформления. Именно красивая фотопечать в кухне станет базой для выбора мебели, цветовой окраски помещения. Не нужно расставлять акценты, это уже сделано. Яркий рисунок на мебели является аксессуаром, который обращает на себя основную долю внимания. !- Размер помещения. В случаи, если ваша кухня небольшая, тогда такое решение поможет зрительно увеличить ее размер, сделав немного просторнее. Угловые кухни тому доказательство. !- Индивидуальность. При оформлении кухни вы демонстрируете свой вкус, собственный стиль. Выбор фотопечати дает возможность в полной мере раскрыться, проявить творческие навыки. Важно обращать внимание не только на рисунок, но и его цветовую окраску. !- Долгий срок эксплуатации. При этом яркость и насыщенность изображения остается прежней. !- Цена. Такой элемент декора имеет сравнительно низкую стоимость. Этот фактор не влияет на качество, или реалистичность рисунка. !- Уход. Весомое достоинство такого выбора состоит в простом уходе с помощью обыкновенных химических средств.<br/><br/>ОСТАВЬТЕ ЗАЯВКУ НА НАШЕМ САЙТЕ ЧТОБЫ ОЗНАКОМИТЬСЯ С ПОЛНЫМ КАТАЛОГОМ ФОТОПЕЧАТИ ИЛИ ВСТРЕТИТЬСЯ С ДИЗАЙНЕРОМ!СПАСИБО!</p> 
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/BpedRnWn-mw/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -440,9 +472,9 @@
 							<a href="./eshche-odna-prekrasnaya-garderobnaya-gotova.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>54</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>55</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/4a2a1eea483fe9677f221dffc695efa4/5E384547/t51.2885-15/e35/70404195_101106907946018_6635252396604846105_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt="Еще одна прекрасная гардеробная готова.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/a8506178bfed51820132fe89b6d4ac76/5E5FD247/t51.2885-15/e35/70404195_101106907946018_6635252396604846105_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt="Еще одна прекрасная гардеробная готова.">
 								</div>
 								<div class="article-more__item-name">Еще одна прекрасная гардеробная готова.</div>
 							</a>
@@ -458,7 +490,7 @@
 							<a href="./peregorodka-iz-gkl-i-dverey-kupe.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>25</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>27</span>
 									</div>
 									<img src="https://scontent-arn2-2.cdninstagram.com/vp/8d3e9e6b392375c70ff4516ca563c154/5E30295C/t51.2885-15/e35/70148977_2293898860920696_6278375219147026208_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="Перегородка из гкл и дверей купе.">
 								</div>
@@ -467,25 +499,16 @@
 							<a href="./kak-vam-karkasnye-polochki.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>23</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>26</span>
 									</div>
 									<img src="https://scontent-arn2-2.cdninstagram.com/vp/bcac5c2e94147b6e1237eef662280980/5E2B44FA/t51.2885-15/e35/72674006_463670701025613_845544006920745582_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="Как вам каркасные полочки?">
 								</div>
 								<div class="article-more__item-name">Как вам каркасные полочки?</div>
 							</a>
-							<a href="./rabochiy-stol--pod-ugol-steny.html" class="article-more__item">
-								<div class="article-more__item-pic">
-									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>22</span>
-									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/48f836f13bb0b3027c887c294ae4a823/5E2B5F85/t51.2885-15/e35/69755718_159805911803766_2450394510779930906_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt="Рабочий стол под угол стены.">
-								</div>
-								<div class="article-more__item-name">Рабочий стол под угол стены.</div>
-							</a>
 							<a href="./garderobnaya.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>20</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>21</span>
 									</div>
 									<img src="https://scontent-arn2-2.cdninstagram.com/vp/2d2560fd817f2398b77163eb2bccff05/5E34BEAB/t51.2885-15/e35/71038410_2439473416332084_7125493678830558139_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="Гардеробная.">
 								</div>
@@ -508,6 +531,15 @@
 									<img src="https://scontent-arn2-2.cdninstagram.com/vp/b65bea20ac0357673315eb656c68c26d/5E2DD0D8/t51.2885-15/e35/69952296_487872805102149_3364381301718148487_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="Встроенный шкаф купе и столик для тв и майкап зоны.">
 								</div>
 								<div class="article-more__item-name">Встроенный шкаф купе и столик для тв и майкап зоны.</div>
+							</a>
+							<a href="./zolotistaya-i-serebristaya-patina-x-variant-universal-nyyx-odnako-luchshe-vsego-ona-smotritsya-na-beloy-i-2.html" class="article-more__item">
+								<div class="article-more__item-pic">
+									<div class="article-more__item-pic-blind">
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>11</span> <span><i class="fa fa-heart" aria-hidden="true"></i>0</span>
+									</div>
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/a751a721931c4de23ddc909045161e00/5E24FDEF/t51.2885-15/e35/41707374_606952263053881_1532835491064315904_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt="Золотистая и серебристая патина — вариант универсальный, однако лучше всего она смотрится на белой или черной кухне, а также на гарнитурах под светлое дерево.">
+								</div>
+								<div class="article-more__item-name">Золотистая и серебристая патина — вариант универсальный, однако лучше всего она смотрится на белой или черной кухне, а также на гарнитурах под светлое дерево.</div>
 							</a>
 						</div>
 					</section>		
@@ -551,11 +583,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->
